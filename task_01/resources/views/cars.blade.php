@@ -30,7 +30,13 @@
                     <th>{{ $servicebook['id'] }}</th>
                     <td>{{ $servicebook['ownerName'] }}</td>
                     <td>{{ $servicebook['car_id'] }}</td>
-                    <td>{{ $servicebook['guarantee'] }}</td>
+                    <td>
+                        @if($servicebook['guarantee'] == 1) 
+                            <input type="checkbox" checked>
+                        @else
+                        <input type="checkbox" >
+                        @endif
+                    </td>
                     <td>{{ $servicebook['car_age_id'] }}</td>
                     <td>{{ $servicebook['startOfService'] }}</td>
                     <td>{{ $servicebook['stopOfService'] }}</td>

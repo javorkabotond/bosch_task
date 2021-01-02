@@ -16,9 +16,9 @@ class CreateServicebooksTable extends Migration
         Schema::create('servicebooks', function (Blueprint $table) {
             $table->id();
             $table->string('ownerName', 50);
-            $table->unsignedBigInteger('car_id')->unique()->nullable();;
+            $table->unsignedBigInteger('car_id');
             $table->boolean('guarantee');
-            $table->unsignedBigInteger('car_age_id')->unique()->nullable();;
+            $table->unsignedBigInteger('car_age_id');
             $table->date('startOfService');
             $table->date('stopOfService')->nullable(true);
             $table->timestamps();
