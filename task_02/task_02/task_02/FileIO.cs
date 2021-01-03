@@ -11,7 +11,7 @@ namespace task_02
 		{
 			string line;
 			var myList = new List<KeyValuePair<int, int>>();
-			System.IO.StreamReader file = new System.IO.StreamReader(@"E:\dev\bosch_task\task_02\task_02\80E7412D.txt");
+			System.IO.StreamReader file = new System.IO.StreamReader(@"");// Az olvasott fajl utvonala 
 			file.ReadLine();
 			while ((line = file.ReadLine()) != null)
 			{
@@ -28,12 +28,13 @@ namespace task_02
 		}
 
 		public void writeFile(string line)
-		{
-			string fileName = @"E:\dev\bosch_task\task_02\task_02\task_02\text.txt";
+		{						
+			string fileName = @""; //Letrehozott fajl utvonala 
 			if (!File.Exists(fileName))
 			{
 				using (StreamWriter sw = File.CreateText(fileName))
 				{
+					sw.WriteLine("tulajdonos \t marka \t tipus");
 					sw.WriteLine(line);
 					sw.Close();
 				}

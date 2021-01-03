@@ -5598,11 +5598,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\dev\\bosch_task\\task_02\\task_02\\task_02\\task_02.csproj",
+      "projectUniqueName": "D:\\bosch_task\\task_02\\task_02\\task_02\\task_02.csproj",
       "projectName": "task_02",
-      "projectPath": "E:\\dev\\bosch_task\\task_02\\task_02\\task_02\\task_02.csproj",
+      "projectPath": "D:\\bosch_task\\task_02\\task_02\\task_02\\task_02.csproj",
       "packagesPath": "C:\\Users\\boton\\.nuget\\packages\\",
-      "outputPath": "E:\\dev\\bosch_task\\task_02\\task_02\\task_02\\obj\\",
+      "outputPath": "D:\\bosch_task\\task_02\\task_02\\task_02\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\boton\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "P8ZEscUVX3SFuZTpl/P80deirCnI251MvbQBiuW4WpxnAurA2y70XpRR2VRMgLLiK0zmuuvkaN5fmHZgfPbk1g==",
+  "dgSpecHash": "Xg+A/Rr0oS57RWZZMzV+oqbu48F3JMw2398NJXOag2T4SZ1mAjYK2BAChGC5bL2VPHBcnFLdXS1WHafJFeA7AQ==",
   "success": true,
-  "projectFilePath": "E:\\dev\\bosch_task\\task_02\\task_02\\task_02\\task_02.csproj",
+  "projectFilePath": "D:\\bosch_task\\task_02\\task_02\\task_02\\task_02.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\boton\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\boton\\.nuget\\packages\\google.protobuf\\3.11.4\\google.protobuf.3.11.4.nupkg.sha512",
