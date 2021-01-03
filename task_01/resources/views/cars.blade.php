@@ -26,6 +26,7 @@
         </thead>
         <tbody>
             @foreach($servicebooks as $servicebook)
+                @if($servicebook['stopOfService'] == null)
                 <tr value="{{ $servicebook['id'] }}">
                     <th>{{ $servicebook['id'] }}</th>
                     <td>{{ $servicebook['ownerName'] }}</td>
@@ -41,10 +42,31 @@
                     <td>{{ $servicebook['startOfService'] }}</td>
                     <td>{{ $servicebook['stopOfService'] }}</td>
                     <td>
-                        <button>Delete</button>
+                        <button onClick="update({{$servicebook['id']}})">Delete</button>
                     </td>
                 </tr>
+                @endif
             @endforeach
+            <script>
+                function update(id) {
+                    $.ajaxSetup({
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        }
+                        });
+                    console.log(id)
+                    $.ajax({  
+                        url:`{{url('update/${id}')}}`,  
+                        method:"POST",
+                        data:{
+                            servicebook_id: id
+                        },                           
+                        success: function( data ) {
+                            console.log(data);
+                        }      
+                    }); 
+                }
+            </script>
         </tbody>
     </table>
 </div>

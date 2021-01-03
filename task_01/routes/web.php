@@ -19,3 +19,4 @@ Route::get('/', [MainController::class, 'index'])->name('home');
 Route::get('/cars', [CarController::class, 'showAll'])->name('cars');
 Route::get('/add', [CarController::class, 'newCar'])->name('new-car');
 Route::post('/store-post', [CarController::class, 'storeNewCar'])->name('store-new-car');
+Route::post('/update/{id}', [CarController::class, 'updateCar']);

@@ -29,9 +29,9 @@
                             @endforeach
                             
                         </select>
-                        @error('carType')
+                        @error('car_id')
                             <div class="invalid-feedback">
-                                <strong>{{ $errors->first('carType') }}</strong>
+                                <strong>{{ $errors->first('car_id') }}</strong>
                             </div>
                         @enderror
                     </div>
@@ -60,8 +60,8 @@
                         <label for="car_age_id">Age: </label>  
                             @foreach ($ages as $age)
                                 <div class="form-check ">
-                                    <input class="form-check-input" checked type="radio" name="car_age_id" id="car_age_id" value="1">
-                                    <label class="form-check-label" for="age" value="{{$age->id}}">{{$age->age}}</label>
+                                    <input class="form-check-input" checked type="radio" name="car_age_id" id="car_age_id" value="{{$age->id}}">
+                                    <label class="form-check-label" for="age" >{{$age->age}}</label>
                                 </div>
                             @endforeach
                         </div>

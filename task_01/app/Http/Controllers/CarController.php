@@ -35,4 +35,10 @@ class CarController extends Controller
         $servicebook = Servicebook::create($data);
         return redirect()->route('cars')->with('car_added', true);
     }
+
+    public function updateCar($servicebook_id) {
+        $servicebook = Servicebook::find($servicebook_id);
+        $servicebook->stopOfService = Carbon::now()->format('Y-m-d H:i:s');
+        $servicebook->save();
+    }
 }
